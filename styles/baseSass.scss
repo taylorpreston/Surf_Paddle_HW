@@ -91,6 +91,29 @@ main {
     margin: 10px
 }
 
+.articleSection{
+  overflow: auto;
+}
+
+.mainArticle {
+  width: 90%;
+  float: right;
+}
+
+.articleActions {
+  width: 10%;
+  float: left;
+  border: none;
+  background: #3E74A0;
+  display: block;
+  margin: 150px 0 0 0;
+
+}
+
+.articleActions a{
+  text-decoration: none;
+}
+
 // hero article section
 
 .heroArticle h2{
@@ -228,7 +251,7 @@ main {
 
 @media (min-width: 575px) {
   .header {
-    height: 250px;
+    height:320px;
     margin: 0;
     text-align: center;
     overflow: auto;
@@ -242,6 +265,7 @@ main {
     background-repeat: no-repeat;
     overflow: auto;
     float: left;
+    margin: 0 0 0 0;
 
   }
 
@@ -250,7 +274,8 @@ main {
     float:left;
     padding:  0 auto;
     display: inline-block;
-    width: 50%
+    width: 50%;
+    overflow: auto;
 
   }
 
@@ -284,13 +309,14 @@ main {
   }
 
   .articleSection {
-    width: 50%;
+    width: 60%;
     float: left;
   }
 
   .articleActions{
     float: left;
-    width: 10%;
+    width: 50%;
+    margin: 0 auto;
   }
 
 

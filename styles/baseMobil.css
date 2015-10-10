@@ -72,6 +72,24 @@ h1, h2, h3, p {
   font-size: 14px;
   margin: 10px; }
 
+.articleSection {
+  overflow: auto; }
+
+.mainArticle {
+  width: 90%;
+  float: right; }
+
+.articleActions {
+  width: 10%;
+  float: left;
+  border: none;
+  background: #3E74A0;
+  display: block;
+  margin: 150px 0 0 0; }
+
+.articleActions a {
+  text-decoration: none; }
+
 .heroArticle h2 {
   text-align: center;
   color: white; }
@@ -167,7 +185,7 @@ h1, h2, h3, p {
 
 @media (min-width: 575px) {
   .header {
-    height: 250px;
+    height: 320px;
     margin: 0;
     text-align: center;
     overflow: auto; }
@@ -178,13 +196,15 @@ h1, h2, h3, p {
     background-size: contain;
     background-repeat: no-repeat;
     overflow: auto;
-    float: left; }
+    float: left;
+    margin: 0 0 0 0; }
   .headerMain {
     margin: 0 auto;
     float: left;
     padding: 0 auto;
     display: inline-block;
-    width: 50%; }
+    width: 50%;
+    overflow: auto; }
   .header h1 {
     font-size: 88px; }
   .header h2 {
@@ -204,11 +224,12 @@ h1, h2, h3, p {
     padding: 2%;
     margin: 0 auto; }
   .articleSection {
-    width: 50%;
+    width: 60%;
     float: left; }
   .articleActions {
     float: left;
-    width: 10%; }
+    width: 50%;
+    margin: 0 auto; }
   .mainArticle {
     margin: 0px auto;
     background: blue;
