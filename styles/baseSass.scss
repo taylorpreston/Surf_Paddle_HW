@@ -1,5 +1,6 @@
-*{
+* {
   box-sizing: border-box;
+  font-family: Myriad;
 }
 body {
   background-color: #f68d5d;
@@ -11,19 +12,17 @@ main {
    margin: 0 0 0 0
  }
 
+@font-face {
+  font-family: "Myriad";
+  src: url(myriad.otf);
+}
+
  //box formating
 
  .header, .hero, .heroArticle, .connectElement, .footer {
    border-radius: 10px 10px 10px 10px;
  }
 
- @mixin postBox {
-   background-repeat: no-repeat;
-   border-radius: 10px;
-   background-size: cover;
-   background-position: top center;
-
- }
 
 
 // Header
@@ -36,7 +35,12 @@ main {
   margin:0 auto;
   padding: 10px 10px 10px 10px;
 }
- .header h1, h2{
+
+.headerMainimg{
+  color: white;
+}
+
+ .headerMain{
    margin: 0 0 0 0;
    font-weight: lighter;
  }
@@ -71,6 +75,7 @@ main {
   margin:0 auto;
   padding: 50px 15px 15px 15px;
   background: #3cc;
+  overflow: auto;
 }
 
 .hero h1{
@@ -87,13 +92,6 @@ main {
 }
 
 // hero article section
-
-.heroArticle {
-  margin: 0 auto;
-  background: #d6e040;
-  padding: 15px 10px;
-  display: block;
-}
 
 .heroArticle h2{
   text-align: center;
@@ -145,7 +143,7 @@ main {
   height: 300px;
   width: 275px;
   margin: 0 auto;
-  border-radius: 50%;
+  border-radius: 30%;
   background-image: url(../images/addMurray.jpg);
 
 }
@@ -154,7 +152,8 @@ main {
 
 .posts {
   margin: 0 auto;
-  padding: 10px
+  padding: 10px;
+  background: green;
 }
 
 .posts h1 {
@@ -173,27 +172,29 @@ main {
   margin: 5px;
   color: blue;
   font-weight: lighter;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: top center;
+}
+
+.postBox:nth-child(1){
+  background-image: url(../images/postBox1.jpg);
 }
 
 .postBox:nth-child(2){
-  background-image: url(../images/postBox1.jpg);
+  background-image: url(../images/postBox2.jpg);
 
-  @include postBox;
 }
 
 .postBox:nth-child(3){
-  background-image: url(../images/postBox2.jpg);
-  @include postBox;
+  background-image: url(../images/postBox3.jpg);
+
 }
 
 .postBox:nth-child(4){
-  background-image: url(../images/postBox3.jpg);
-  @include postBox;
-}
-
-.postBox:nth-child(5){
   background-image: url(../images/postBox4.jpg);
-  @include postBox;
+
 }
 
 // FOOTER SECTION
@@ -227,32 +228,120 @@ main {
 
 @media (min-width: 575px) {
   .header {
-    height: 200px;
+    height: 150px;
+    margin: 0;
   }
+
+  .headerImg{
+    height: 20px;
+    width: 20px;
+    background-image: url(..images/image1);
+    overflow: hidden;
+  }
+
+  .headerMain {
+    margin: 0 0 0 0;
+    overflow-x: hidden;
+  }
+
   .header h1{
     font-size: 48px;
   }
   .header nav{
-    margin: 50px 20px 0 20px;
+    margin: 0 auto;
+    padding: 0 10%;
+    float: right;
+    overflow: hidden;
   }
   .header a{
-    margin: 0 auto
+    margin: 0 0px;
+    width: 50%;
+    float: right;
   }
 
 // desktop hero
+
+  .hero {
+    padding: 2%;
+    margin: 0 auto;
+  }
 
   .mainArticle {
     margin: 0px auto;
     float: left;
     background: blue;
-    width:66.66%;
     padding: 10px;
+    border-radius: 10px;
+    width: 60%;
   }
 
-  .heroArticle {
+  .sideBar {
+    margin: 0 auto;
+    background-color: purple;
     float: right;
+    border-radius: 10px;
+    padding: 0 0 0 0;
   }
+
   .connectElement{
-    float: right;
+    float: none;
+    margin: 0 auto;
+
   }
+
+  .ad {
+    float: none;
+    margin: 0 auto;
+  }
+  // POST Desktop section
+  .posts{
+    overflow: auto;
+    padding: 0 0%;
+  }
+
+  .postSections {
+    width: 100%;
+    display: block;
+  }
+
+  .postBox {
+    float: left;
+    width: 25%;
+    font-size: 22px;
+    margin: 0 0 0 0;
+    border-radius: 0;
+}
+
+ // footer Desktop
+
+ .footer {
+   height: 75px;
+   overflow: none;
+ }
+
+ .footer img{
+   float:left;
+   height: 20px;
+   width: 20px;
+ }
+ .footerNavSection{
+   float: right;
+ }
+ .footer nav {
+   float: left
+ }
+
+ .footerNav2 {
+   float: right;
+ }
+
+.footerLogoCopyright {
+  float: left;
+  margin: 0 auto;
+}
+.copyRight{
+  margin: 10px 0 0 0;
+  float: left;
+}
+
 }

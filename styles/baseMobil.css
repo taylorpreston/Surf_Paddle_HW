@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: Myriad; }
 
 body {
   background-color: #f68d5d; }
@@ -9,6 +10,10 @@ main {
 
 h1, h2, h3, p {
   margin: 0 0 0 0; }
+
+@font-face {
+  font-family: "Myriad";
+  src: url(myriad.otf); }
 
 .header, .hero, .heroArticle, .connectElement, .footer {
   border-radius: 10px 10px 10px 10px; }
@@ -22,7 +27,10 @@ h1, h2, h3, p {
   margin: 0 auto;
   padding: 10px 10px 10px 10px; }
 
-.header h1, h2 {
+.headerMainimg {
+  color: white; }
+
+.headerMain {
   margin: 0 0 0 0;
   font-weight: lighter; }
 
@@ -51,7 +59,8 @@ h1, h2, h3, p {
 .hero {
   margin: 0 auto;
   padding: 50px 15px 15px 15px;
-  background: #3cc; }
+  background: #3cc;
+  overflow: auto; }
 
 .hero h1 {
   font-size: 48px;
@@ -63,12 +72,6 @@ h1, h2, h3, p {
 .hero p {
   font-size: 14px;
   margin: 10px; }
-
-.heroArticle {
-  margin: 0 auto;
-  background: #d6e040;
-  padding: 15px 10px;
-  display: block; }
 
 .heroArticle h2 {
   text-align: center;
@@ -107,12 +110,13 @@ h1, h2, h3, p {
   height: 300px;
   width: 275px;
   margin: 0 auto;
-  border-radius: 50%;
+  border-radius: 30%;
   background-image: url(../images/addMurray.jpg); }
 
 .posts {
   margin: 0 auto;
-  padding: 10px; }
+  padding: 10px;
+  background: green; }
 
 .posts h1 {
   text-align: center;
@@ -127,35 +131,23 @@ h1, h2, h3, p {
   font-size: 30px;
   margin: 5px;
   color: blue;
-  font-weight: lighter; }
+  font-weight: lighter;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: top center; }
+
+.postBox:nth-child(1) {
+  background-image: url(../images/postBox1.jpg); }
 
 .postBox:nth-child(2) {
-  background-image: url(../images/postBox1.jpg);
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: top center; }
+  background-image: url(../images/postBox2.jpg); }
 
 .postBox:nth-child(3) {
-  background-image: url(../images/postBox2.jpg);
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: top center; }
+  background-image: url(../images/postBox3.jpg); }
 
 .postBox:nth-child(4) {
-  background-image: url(../images/postBox3.jpg);
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: top center; }
-
-.postBox:nth-child(5) {
-  background-image: url(../images/postBox4.jpg);
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: top center; }
+  background-image: url(../images/postBox4.jpg); }
 
 .footer {
   margin: auto;
@@ -176,20 +168,77 @@ h1, h2, h3, p {
 
 @media (min-width: 575px) {
   .header {
-    height: 200px; }
+    height: 150px;
+    margin: 0; }
+  .headerImg {
+    height: 20px;
+    width: 20px;
+    background-image: url(..images/image1);
+    overflow: hidden; }
+  .headerMain {
+    margin: 0 0 0 0;
+    overflow-x: hidden; }
   .header h1 {
     font-size: 48px; }
   .header nav {
-    margin: 50px 20px 0 20px; }
+    margin: 0 auto;
+    padding: 0 10%;
+    float: right;
+    overflow: hidden; }
   .header a {
+    margin: 0 0px;
+    width: 50%;
+    float: right; }
+  .hero {
+    padding: 2%;
     margin: 0 auto; }
   .mainArticle {
     margin: 0px auto;
     float: left;
     background: blue;
-    width: 66.66%;
-    padding: 10px; }
-  .heroArticle {
-    float: right; }
+    padding: 10px;
+    border-radius: 10px;
+    width: 60%; }
+  .sideBar {
+    margin: 0 auto;
+    background-color: purple;
+    float: right;
+    border-radius: 10px;
+    padding: 0 0 0 0; }
   .connectElement {
-    float: right; } }
+    float: none;
+    margin: 0 auto; }
+  .ad {
+    float: none;
+    margin: 0 auto; }
+  .posts {
+    overflow: auto;
+    padding: 0 0%; }
+  .postSections {
+    width: 100%;
+    display: block; }
+  .postBox {
+    float: left;
+    width: 25%;
+    font-size: 22px;
+    margin: 0 0 0 0;
+    border-radius: 0; }
+  .footer {
+    height: 75px;
+    overflow: none; }
+  .footer img {
+    float: left;
+    height: 20px;
+    width: 20px; }
+  .footerNavSection {
+    float: right; }
+  .footer nav {
+    float: left; }
+  .footerNav2 {
+    float: right; }
+  .footerLogoCopyright {
+    float: left;
+    margin: 0 auto; }
+  .copyRight {
+    margin: 10px 0 0 0;
+    float: left; } }
