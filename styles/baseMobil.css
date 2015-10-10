@@ -23,7 +23,6 @@ h1, h2, h3, p {
   background: navy;
   text-align: center;
   color: white;
-  overflow: auto;
   margin: 0 auto;
   padding: 10px 10px 10px 10px; }
 
@@ -46,7 +45,7 @@ h1, h2, h3, p {
 .header a {
   text-decoration: none;
   color: pink;
-  width: 205px;
+  width: 50%;
   height: 30px;
   border-radius: 10px;
   display: block;
@@ -54,7 +53,7 @@ h1, h2, h3, p {
   text-align: center;
   padding: 10px;
   background: #00A79C;
-  margin: 4px; }
+  margin: 0 auto; }
 
 .hero {
   margin: 0 auto;
@@ -168,43 +167,62 @@ h1, h2, h3, p {
 
 @media (min-width: 575px) {
   .header {
-    height: 150px;
-    margin: 0; }
+    height: 250px;
+    margin: 0;
+    text-align: center;
+    overflow: auto; }
   .headerImg {
-    height: 20px;
-    width: 20px;
-    background-image: url(..images/image1);
-    overflow: hidden; }
+    width: 25%;
+    height: 80%;
+    background-image: url(../images/image1.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: auto;
+    float: left; }
   .headerMain {
-    margin: 0 0 0 0;
-    overflow-x: hidden; }
-  .header h1 {
-    font-size: 48px; }
-  .header nav {
     margin: 0 auto;
-    padding: 0 10%;
+    float: left;
+    padding: 0 auto;
+    display: inline-block;
+    width: 50%; }
+  .header h1 {
+    font-size: 88px; }
+  .header h2 {
+    overflow: hidden;
+    margin: 0; }
+  .headerNav {
+    width: 25%;
+    margin: 0 auto;
     float: right;
     overflow: hidden; }
   .header a {
     margin: 0 0px;
     width: 50%;
-    float: right; }
+    min-width: 100px;
+    float: left; }
   .hero {
     padding: 2%;
     margin: 0 auto; }
+  .articleSection {
+    width: 50%;
+    float: left; }
+  .articleActions {
+    float: left;
+    width: 10%; }
   .mainArticle {
     margin: 0px auto;
-    float: left;
     background: blue;
     padding: 10px;
     border-radius: 10px;
-    width: 60%; }
+    width: 100%; }
   .sideBar {
     margin: 0 auto;
     background-color: purple;
     float: right;
     border-radius: 10px;
-    padding: 0 0 0 0; }
+    padding: 0 0 0 0;
+    width: 30%;
+    margin: 0  0 0; }
   .connectElement {
     float: none;
     margin: 0 auto; }
