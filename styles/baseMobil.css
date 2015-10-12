@@ -12,9 +12,6 @@ h1, h2, h3, p {
   font-family: "Myriad";
   src: url(myriad.otf); }
 
-.header, .hero, .heroArticle, .connectElement, .footer {
-  border-radius: 10px 10px 10px 10px; }
-
 .header {
   height: 131px;
   background: navy;
@@ -27,8 +24,23 @@ h1, h2, h3, p {
   margin: 0 auto;
   padding: 10px 10px 10px 10px; }
 
-.headerMainimg {
-  color: white; }
+.headerNav {
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0 auto;
+  font-weight: bold; }
+
+.header a {
+  text-decoration: none;
+  color: #06324F;
+  width: 50%;
+  height: 30px;
+  border-radius: 10px;
+  display: block;
+  float: left;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto; }
 
 .headerMain {
   margin: 0 0 0 0;
@@ -38,24 +50,6 @@ h1, h2, h3, p {
   font-size: 14px;
   margin-bottom: 10px; }
 
-.headerNav {
-  padding: 0 0 0 0;
-  margin: 0 auto;
-  font-weight: bold; }
-
-.header a {
-  text-decoration: none;
-  color: pink;
-  width: 50%;
-  height: 30px;
-  border-radius: 10px;
-  display: block;
-  float: left;
-  text-align: center;
-  padding: 10px 0;
-  background: #00A79C;
-  margin: 0 auto; }
-
 .hero {
   margin: 0 auto;
   padding: 50px 15px 15px 15px;
@@ -63,10 +57,11 @@ h1, h2, h3, p {
 
 .hero h1 {
   font-size: 48px;
-  color: Navy;
+  color: #083452;
   font-weight: lighter;
   margin: 0 0 30px 0;
-  padding: 30px; }
+  padding: 30px;
+  font-family: "Oswald"; }
 
 .hero p {
   font-size: 14px;
@@ -99,10 +94,10 @@ h1, h2, h3, p {
 
 .mainArticle h2 {
   text-align: center;
-  color: Navy; }
+  color: #083452;
+  font-family: "Oswald"; }
 
 .connectElement {
-  background-color: #fff3a7;
   margin: 20px auto;
   text-align: center;
   padding: 10px; }
@@ -128,15 +123,16 @@ h1, h2, h3, p {
   color: #A0B0BD; }
 
 .ad {
-  margin: 15px 0; }
+  margin: 15px 0;
+  text-align: center; }
 
 .adImg {
   height: 300px;
-  width: 275px;
+  width: 100%;
   margin: 0 auto;
-  border-radius: 30%;
   background-image: url(../assets/ad.jpg);
-  background-position: center; }
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .posts {
   margin: 0 auto;
@@ -207,6 +203,10 @@ h1, h2, h3, p {
     margin: 0;
     text-align: center;
     overflow: auto; }
+  .headerFeatures {
+    width: 100%;
+    height: 90px;
+    float: right; }
   .headerImg {
     width: 60px;
     height: 60px;
@@ -217,21 +217,21 @@ h1, h2, h3, p {
     margin: 0 0 0 0;
     float: left; }
   .headerMain {
-    margin: 120px auto 0;
+    margin: 40px auto 0;
     float: left;
     padding: 0 auto;
-    display: inline-block;
-    width: 74%;
-    overflow: auto; }
+    width: 100%;
+    overflow: auto;
+    font-weight: lighter; }
   .header h1 {
-    font-size: 60px; }
+    font-size: 100px; }
   .header h2 {
     overflow: hidden;
     margin: 0; }
   .headerNav {
-    width: 13%;
+    width: 25%;
     margin: 0 auto;
-    float: left;
+    float: right;
     overflow: auto; }
   .header a {
     margin: 0 0px;
@@ -239,11 +239,11 @@ h1, h2, h3, p {
     float: left;
     overflow: auto; }
   .hero {
-    padding: 10px;
     margin: 0 auto; }
   .articleSection {
     width: 70%;
-    float: left; }
+    float: left;
+    padding-left: 100px; }
   .articleActions {
     margin: 0 auto;
     text-align: center;
@@ -254,6 +254,8 @@ h1, h2, h3, p {
     float: left;
     margin: 8px 2px 0 2px;
     background: #A3B3BF; }
+  .articleActions:hover, a:hover {
+    background-color: #106DB3; }
   .articleActionsImg {
     width: 35px;
     height: 31px;
@@ -266,7 +268,6 @@ h1, h2, h3, p {
     width: 100%; }
   .sideBar {
     margin: 0 auto;
-    background-color: purple;
     float: right;
     border-radius: 10px;
     padding: 0 0 0 0;
@@ -313,7 +314,8 @@ h1, h2, h3, p {
     width: 50%;
     margin: 10px 0 0 0; }
   .footer nav {
-    float: left; }
+    float: left;
+    margin: 0 2px; }
   .footerNav2 {
     float: right; }
   .footerLogoCopyright {

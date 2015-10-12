@@ -20,9 +20,6 @@ main {
 
  //box formating
 
- .header, .hero, .heroArticle, .connectElement, .footer {
-   border-radius: 10px 10px 10px 10px;
- }
 
 
 
@@ -40,9 +37,28 @@ main {
   padding: 10px 10px 10px 10px;
 }
 
-.headerMainimg{
-  color: white;
+
+.headerNav{
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0 auto;
+  font-weight: bold;
 }
+
+
+.header a{
+ text-decoration: none;
+ color: #06324F;
+ width: 50%;
+ height: 30px;
+ border-radius: 10px;
+ display: block;
+ float: left;
+ text-align: center;
+ padding: 10px 0;
+ margin: 0 auto;
+}
+
 
  .headerMain{
    margin: 0 0 0 0;
@@ -54,25 +70,7 @@ main {
   font-size: 14px;
   margin-bottom: 10px;
 }
- .headerNav{
-   padding: 0 0 0 0;
-   margin: 0 auto;
-   font-weight: bold;
- }
 
-.header a{
-  text-decoration: none;
-  color: pink;
-  width: 50%;
-  height: 30px;
-  border-radius: 10px;
-  display: block;
-  float: left;
-  text-align: center;
-  padding: 10px 0;
-  background: #00A79C;
-  margin: 0 auto;
-}
 
 // HERO SECTION
 
@@ -84,10 +82,11 @@ main {
 
 .hero h1{
   font-size: 48px;
-  color: Navy;
+  color: #083452;
   font-weight: lighter;
   margin: 0 0 30px 0;
-  padding: 30px
+  padding: 30px;
+  font-family: "Oswald";
 }
 
 .hero p{
@@ -130,14 +129,14 @@ main {
 
 .mainArticle h2{
   text-align: center;
-  color: Navy;
+  color: #083452;
+  font-family: "Oswald";
 
 }
 
 // CONNECT ELEMENT
 
 .connectElement{
-  background-color: #fff3a7;
   margin: 20px auto;
   text-align: center;
   padding: 10px
@@ -173,15 +172,16 @@ main {
 
 .ad {
   margin: 15px 0;
+  text-align: center;
 }
 
 .adImg {
   height: 300px;
-  width: 275px;
+  width: 100%;
   margin: 0 auto;
-  border-radius: 30%;
   background-image: url(../assets/ad.jpg);
   background-position: center;
+  background-repeat: no-repeat;
 
 
 }
@@ -288,6 +288,12 @@ main {
     overflow: auto;
   }
 
+  .headerFeatures{
+    width: 100%;
+    height: 90px;
+    float: right;
+  }
+
   .headerImg{
     width: 60px;
     height: 60px;
@@ -301,18 +307,18 @@ main {
 
 
   .headerMain {
-    margin: 120px auto 0;
+    margin: 40px auto 0;
     float:left;
     padding:  0 auto;
-    display: inline-block;
-    width: 74%;
+    width: 100%;
     overflow: auto;
+    font-weight: lighter;
 
 
   }
 
   .header h1{
-    font-size: 60px;
+    font-size: 100px;
   }
 
   .header h2{
@@ -321,9 +327,9 @@ main {
   }
 
   .headerNav{
-    width: 13%;
+    width: 25%;
     margin: 0 auto;
-    float: left;
+    float: right;
     overflow: auto;
   }
   .header a{
@@ -336,13 +342,13 @@ main {
 // desktop hero
 
   .hero {
-    padding: 10px;
     margin: 0 auto;
   }
 
   .articleSection {
     width: 70%;
     float: left;
+    padding-left: 100px
   }
 
   .articleActions{
@@ -358,8 +364,10 @@ main {
     float: left;
     margin: 8px 2px 0 2px;
     background: #A3B3BF;
+  }
 
-
+  .articleActions:hover, a:hover{
+    background-color: #106DB3;
   }
 
   .articleActionsImg {
@@ -367,10 +375,6 @@ main {
     height: 31px;
     float: left;
     padding: 8px;
-  }
-
-  .articleActions img {
-
   }
 
 
@@ -383,7 +387,6 @@ main {
 
   .sideBar {
     margin: 0 auto;
-    background-color: purple;
     float: right;
     border-radius: 10px;
     padding: 0 0 0 0;
@@ -461,6 +464,7 @@ main {
  }
  .footer nav {
    float: left;
+   margin: 0 2px;
  }
 
  .footerNav2 {
