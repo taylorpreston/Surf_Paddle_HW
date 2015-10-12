@@ -3,7 +3,7 @@
   font-family: "Myriad";
 }
 body {
-  background-color: #f68d5d;
+
 }
 main {
   margin: 0 auto;
@@ -30,6 +30,10 @@ main {
 .header {
   height: 131px;
   background: navy ;
+  background-image: url(../assets/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   color: white;
   margin:0 auto;
@@ -65,7 +69,7 @@ main {
   display: block;
   float: left;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
   background: #00A79C;
   margin: 0 auto;
 }
@@ -75,13 +79,12 @@ main {
 .hero {
   margin:0 auto;
   padding: 50px 15px 15px 15px;
-  background: #3cc;
   overflow: auto;
 }
 
 .hero h1{
   font-size: 48px;
-  color: white;
+  color: Navy;
   font-weight: lighter;
   margin: 0 0 30px 0;
   padding: 30px
@@ -89,7 +92,8 @@ main {
 
 .hero p{
     font-size: 14px;
-    margin: 10px
+    margin: 10px;
+    color: #525E63;
 }
 
 .articleSection{
@@ -105,21 +109,27 @@ main {
   width: 10%;
   float: left;
   border: none;
-  background: #3E74A0;
+  background: #A3B3BF;
   display: block;
   margin: 150px 0 0 0;
 
 }
 
+.articleActionsImg{
+  background: #5E686F;
+}
+
 .articleActions a{
   text-decoration: none;
+  color: white;
 }
 
 // hero article section
 
-.heroArticle h2{
+.mainArticle h2{
   text-align: center;
-  color: white;
+  color: Navy;
+
 }
 
 // CONNECT ELEMENT
@@ -259,18 +269,19 @@ main {
   }
 
   .headerImg{
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/image1.jpeg);
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: auto;
     margin: 0 0 0 0;
+    float: left;
   }
 
   .imgOverlay{
-    width: 13%;
-    height: 20%;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     float: left;
     background: blue;
@@ -280,7 +291,7 @@ main {
   }
 
   .headerMain {
-    margin: 150px 0 0 0;
+    margin: 120px auto 0;
     float:left;
     padding:  0 auto;
     display: inline-block;
@@ -302,13 +313,14 @@ main {
   .headerNav{
     width: 13%;
     margin: 0 auto;
-    float: right;
-    overflow: hidden;
+    float: left;
+    overflow: auto;
   }
   .header a{
     margin: 0 0px;
     width: 50%;
     float: left;
+    overflow: auto;
   }
 
 // desktop hero
@@ -319,27 +331,41 @@ main {
   }
 
   .articleSection {
-    width: 60%;
+    width: 70%;
     float: left;
   }
 
   .articleActions{
-    width: 100%;
     margin: 0 auto;
     text-align: center;
+    width: auto;
+    margin: 0 0 0 0;
   }
+
 
   .articleActions a{
     display: block;
     float: left;
-    width: 30%;
+    margin: 8px 2px 0 2px;
+    background: #A3B3BF;
+
+
+  }
+
+  .articleActionsImg {
+    width: 35px;
+    height: 31px;
+    float: left;
+    padding: 8px;
+  }
+
+  .articleActions img {
 
   }
 
 
   .mainArticle {
     margin: 0px auto;
-    background: blue;
     padding: 10px;
     border-radius: 10px;
     width: 100%;
@@ -351,7 +377,7 @@ main {
     float: right;
     border-radius: 10px;
     padding: 0 0 0 0;
-    width: 30%;
+    width: 25%;
     margin: 0  0 0 ;
   }
 
